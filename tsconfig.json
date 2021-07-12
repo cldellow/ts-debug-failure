@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist",
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["es2018", "es2019.array", "dom"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "types": [],
+    "noUnusedLocals": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true, // don't error out on libraries we use
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.tsx"]
+}

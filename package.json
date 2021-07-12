@@ -1,0 +1,27 @@
+{
+  "name": "demo",
+  "version": "0.0.1",
+  "description": "Demo a TS crash",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/jest": "26.0.20",
+    "typescript": "4.3.2"
+  },
+  "engines": {
+    "node": "^16.3.0"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "watch": "rimraf dist && tsc --watch",
+    "tsc:check": "yarn tsc --noEmit --project tsconfig.json",
+    "watch:check": "yarn tsc --noEmit --watch --project tsconfig.json"
+  },
+  "dependencies": {
+    "runtypes": "6.3.1"
+  }
+}
